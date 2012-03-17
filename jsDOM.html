@@ -1,0 +1,24 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>My First DOM Scripting Lesson</title>
+</head>
+
+<body bgcolor=0fff0f>
+<div>
+<div id="myFirstDOMElement" style="width:500px; height:300px; background:#000000; color:#00fffb; text-align:center;">
+<center><div style="width:250px; height:150px; background:#ffffff; color:#00fffb; text-align:center;">I AM A BOX!!</div></center>
+</div>
+<!--div id="myFirstDOMElement" style="width:250px; height:150px;
+background:#ffffff; color:#00fffb; text-align:center;">I AM A BOX!!</div-->
+</div>
+<script type="text/javascript">
+var element = document.getElementById("myFirstDOMElement");
+alert(element);
+var parent = document.getElementsByTagName("div")[0];
+alert(parent);
+var sec = parent.nextSibling;
+alert(sec);
+</script>
+</body>
+</html>

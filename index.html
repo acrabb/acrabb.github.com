@@ -1,11 +1,63 @@
 <!doctype html>
 
-<html>
-    <head>
-        <title>ARC @ GITHUB</title>
-    </head>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Andr&eacute; Crabb</title>
+</head>
 
-    <body bgcolor=000000 text=00fffb>
-        <h1>OH HAI</h1>        
-    </body>
+<!--body bgcolor=000000 style="color:00fffb; text-align:center"-->
+<body bgcolor=000000 text="00fffb" style="text-align:center">
+    <center><h1><strong>Andr&eacute; Raymond Crabb</strong></h1>
+    <!--h1 style="color:00fffb">Andr&eacute; Raymond Crabb</h1-->
+    <span><code>Cite is under (initial) construction!</code></span>
+    
+    </br>
+    </br>
+    <q cite="http://www.example.com/philosophy.html">I think therefore I am.</q>
+    <br/>
+
+    <div>
+        <a href="http://mp-complete.herokuapp.com/">.mp-Complete</a>
+        <a href="http://www.linkedin.com/pub/andr%C3%A9-crabb/32/925/193">LinkedIn</a>
+        <a href="contact.html">Contact</a>
+        <a href="projects.html">Projects</a>
+        </br>
+        <button id="button" onclick="buttonAction()" style="font-size:75%">Touch Me!</button>
+    </div>
+<!--
+    <hr>
+    
+    <p>I like <abbr title="Light Amplification by Stimulated Emission of
+    Radiation">LASERS</abbr>.</p>
+    <pre style="text-align:left">
+        for i in range(10):
+            print "I love python."
+    </pre>
+-->
+    <hr>
+
+    <img src="imgs/throughFlame.jpg" height="400"/>
+    <!--img src="imgs/haircut.jpg"/-->
+    <hr>
+
+    <script type="text/javascript">
+        var count=0;
+        function buttonAction(){
+            var color="black";
+            var size = "font-size:75%"
+            var text = "Touch Me!"
+            var buttonStates = {0:{color:"red", "size":"font-size:50%", "text":"ouch!"},
+                1:{color:"green", "size":"font-size:75%", "text":"OUCH!"},
+                2:{color:"blue", "size":"font-size:100%", "text":"OUCH!!!"}
+                };
+    
+            document.getElementById("button").innerHTML=buttonStates[count].text;
+            document.getElementById("button").style.color=buttonStates[count].color;
+            console.log(count);
+            count+=1;
+            count%=3;
+}
+    </script>
+</body>
+
 </html>
