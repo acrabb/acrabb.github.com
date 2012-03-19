@@ -1,0 +1,22 @@
+body {
+    font-size:100%;
+    background-color:#000000;
+    text-align:center;
+    color:#00fffb;
+    margin:20px;
+}
+
+#NAVBAR {
+    font-size:150%;
+    font-weight:bold;
+}
+
+h1{font-size:200%;}
+h2{font-size:140%;}
+h3{font-size:110%;}
+
+/*a: order matters!*/
+a:link {color:#bfff00;}
+a:visited {color:#bfff00;}
+a:hover {color:#e00011; text-decoration:underline;}
+/**a:active {}**/
