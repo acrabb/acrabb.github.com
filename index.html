@@ -18,13 +18,12 @@
             <a target="_blank" href="http://www.linkedin.com/pub/andr%C3%A9-crabb/32/925/193">LinkedIn</a>
             </br>
         </div>
-        <hr />
+        <!--hr /-->
     </div>
 
     <span><code>Site is under (initial) construction!</code></span>
     
-    </br>
-    <q cite="http://www.example.com/philosophy.html">Cogito ergo sum.</q>
+    <!---q cite="http://www.example.com/philosophy.html">Cogito ergo sum.</q-->
     <br/>
 
     <button id="button" onclick="buttonAction()" style="font-size:75%">Touch Me!</button>
@@ -50,16 +49,18 @@
             var color="black";
             var size = "font-size:75%"
             var text = "Touch Me!"
-            var buttonStates = {0:{color:"red", "size":"font-size:50%", "text":"ouch!"},
+            var buttonStates = {
+                0:{color:"red", "size":"font-size:50%", "text":"ouch!"},
                 1:{color:"green", "size":"font-size:75%", "text":"OUCH!"},
-                2:{color:"blue", "size":"font-size:100%", "text":"OUCH!!!"}
+                2:{color:"blue", "size":"font-size:100%", "text":"OUCH!!!"},
+                3:{color:"black", "size":"font-size:50%", "text":"Touch Me!"}
                 };
     
             document.getElementById("button").innerHTML=buttonStates[count].text;
             document.getElementById("button").style.color=buttonStates[count].color;
             console.log(count);
             count+=1;
-            count%=3;
+            count%=4;
 }
     </script>
 </body>
