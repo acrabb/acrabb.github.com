@@ -1,0 +1,20 @@
+/*
+light green: A7FF7E
+green: 56ff0b
+orange: ff4f00
+light blue: 3a42cc
+blue: 000ab2
+*/
+
+body {
+    font-size:100%;
+    font-family:'Lato', sans-serif;
+    background-color:#7AFC92;
+}
+
+
+div#name {
+    font-size: 55px;
+    font-weight: 100;
+    color: #770033;
+}

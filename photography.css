@@ -1,0 +1,11 @@
+#container {
+    width: 800px;
+    margin: 0 auto;
+}
+
+#thumb {
+	width: 200px;
+	height: 200px;
+	overflow: hidden;
+	float: left;
+}

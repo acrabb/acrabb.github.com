@@ -1,0 +1,33 @@
+#container {
+    width: 700px;
+    margin: 0 auto;
+}
+.menu {
+    font-size: 30px;
+    font-weight: 300;
+    color: #330066;
+    height: 130px;
+    width: 350;
+    border-radius: 10;
+    padding: 10;
+}
+#menu-table {
+    width: 700px;
+    margin-top: 40px;
+}
+#projects {
+    background-color: rgba(0, 0, 0, 0.5);
+    float: left;
+}
+#music {
+    background: #56ff0b;
+    float: right;
+}
+#contact {
+    background: #ff4f00;
+    float: left;
+}
+#photography {
+    background: #000ab2;
+    float: right;
+}

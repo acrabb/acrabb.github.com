@@ -4,6 +4,7 @@
     <link rel="stylesheet" type="text/css" href="css/core.css" />
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <title>Andr&eacute; Crabb</title>
+    <script type="text/javascript" src="js/jquery.min.js"></script>
 </head>
 
 <!--body bgcolor=000000 style="color:00fffb; text-align:center"-->
@@ -45,29 +46,30 @@
     </pre>
 -->
 
-    <img src="imgs/me/throughFlame.jpg" height="400"/>
-    <!--img src="imgs/haircut.jpg"/-->
-
+    <img id="portrait" src="imgs/me/throughFlame.jpg" height="400"/>
+    <!--img src="imgs/me/haircut.jpg"/-->
     <script type="text/javascript">
         var count=0;
         function buttonAction(){
-            var color="black";
-            var size = "font-size:75%"
-            var text = "Touch Me!"
-            var buttonStates = {
-                0:{color:"red", "size":"font-size:50%", "text":"ouch!"},
-                1:{color:"green", "size":"font-size:75%", "text":"OUCH!"},
-                2:{color:"blue", "size":"font-size:100%", "text":"OUCH!!!"},
-                3:{color:"black", "size":"font-size:50%", "text":"Touch Me!"}
-                };
-    
-            document.getElementById("button").innerHTML=buttonStates[count].text;
-            document.getElementById("button").style.color=buttonStates[count].color;
-            console.log(count);
-            count+=1;
-            count%=4;
+            $("#portrait").attr("src", "imgs/me/haircut.jpg");
+            $("#portrait").animate({"height": "300px"}, "slow");
+            // var color="black";
+            // var size = "font-size:75%"
+            // var text = "Touch Me!"
+            // var buttonStates = {
+            //     0:{color:"red", "size":"font-size:50%", "text":"ouch!"},
+            //     1:{color:"green", "size":"font-size:75%", "text":"OUCH!"},
+            //     2:{color:"blue", "size":"font-size:100%", "text":"OUCH!!!"},
+            //     3:{color:"black", "size":"font-size:50%", "text":"Touch Me!"}
+            //     };
+            // $("#button")[0].innerHTML=buttonStates[count].text;
+            // $("#button")[0].style.color=buttonStates[count].color;
+            // count+=1;
+            // count%=4;
+
 }
     </script>
+    <script type="text/javascript" src="js/myscript.js"></script>
 </body>
 
 </html>
