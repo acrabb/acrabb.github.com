@@ -1,75 +1,22 @@
-<!doctype html>
-
-<head>
-    <link rel="stylesheet" type="text/css" href="css/core.css" />
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <title>Andr&eacute; Crabb</title>
-    <script type="text/javascript" src="js/jquery.min.js"></script>
-</head>
-
-<!--body bgcolor=000000 style="color:00fffb; text-align:center"-->
-<body>
-    <div id="HEADER">
-        <span class="pageTitle"><strong>Andr&eacute; Raymond Crabb</strong></span>
-        <br />
-        <br />
-        <!--NAVIGATION BAR-->
-        <div id="NAVBAR">
-            <a href="index.html">Home</a>
-            <a href="projects.html">Projects</a>
-            <a href="contact.html">Contact</a>
-            <a target="_blank" href="http://www.linkedin.com/pub/andr%C3%A9-crabb/32/925/193">LinkedIn</a>
-            </br>
-        </div>
-        <!--hr /-->
-    </div>
-
-    <br />
-
-    <span><code>Site is under (initial) construction!</code></span>
-    
-    <!---q cite="http://www.example.com/philosophy.html">Cogito ergo sum.</q-->
-    <br/>
-
-    <button id="button" onclick="buttonAction()" style="font-size:75%">Touch Me!</button>
-    <br/>
-    <br/>
-
-<!-- MESSING AROUND WITH ABBREVIATIONS
-    <hr>
-    
-    <p>I like <abbr title="Light Amplification by Stimulated Emission of
-    Radiation">LASERS</abbr>.</p>
-    <pre style="text-align:left">
-        for i in range(10):
-            print "I love python."
-    </pre>
--->
-
-    <img id="portrait" src="imgs/me/throughFlame.jpg" height="400"/>
-    <!--img src="imgs/me/haircut.jpg"/-->
-    <script type="text/javascript">
-        var count=0;
-        function buttonAction(){
-            $("#portrait").attr("src", "imgs/me/haircut.jpg");
-            $("#portrait").animate({"height": "300px"}, "slow");
-            // var color="black";
-            // var size = "font-size:75%"
-            // var text = "Touch Me!"
-            // var buttonStates = {
-            //     0:{color:"red", "size":"font-size:50%", "text":"ouch!"},
-            //     1:{color:"green", "size":"font-size:75%", "text":"OUCH!"},
-            //     2:{color:"blue", "size":"font-size:100%", "text":"OUCH!!!"},
-            //     3:{color:"black", "size":"font-size:50%", "text":"Touch Me!"}
-            //     };
-            // $("#button")[0].innerHTML=buttonStates[count].text;
-            // $("#button")[0].style.color=buttonStates[count].color;
-            // count+=1;
-            // count%=4;
-
-}
-    </script>
-    <script type="text/javascript" src="js/myscript.js"></script>
-</body>
-
+<!DOCTYPE>
+<html>
+	<head>
+		<link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900' rel='stylesheet' type='text/css'>
+		<link rel="stylesheet" type="text/css" href="css/core0.css">
+		<link rel="stylesheet" type="text/css" href="css/index0.css">
+		<title>Andr&eacute; Crabb</title>
+	</head>
+	<body>
+		<div id="container">
+			<div><a  id="name" href="index.html">andr&eacute; crabb</a></div>
+			<hr/>
+			<div id="content">
+				<img id="portrait" src="imgs/me/throughFlame.jpg" height="300"/>
+				<a href="projects.html"><div class="menu" id="projects">projects</div></a>
+				<a href="http://www.myspace.com/bandteamawesome" target="_blank"><div class="menu" target="_blank" id="music">music</div></a>
+				<a href="contact.html"><div class="menu" id="contact">contact</div></a>
+				<a href="photography.html"><div class="menu" id="photography">photography</div></a>
+			</div>
+		</div>
+	</body>
 </html>
